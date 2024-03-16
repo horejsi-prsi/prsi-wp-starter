@@ -27,7 +27,7 @@ zerops:
 
           wp plugin activate --all --allow-root
 
-          wp theme activate astra-child
+          wp theme activate astra-child --allow-root
 
       deploy:
         - ./
