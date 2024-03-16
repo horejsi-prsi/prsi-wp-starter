@@ -106,7 +106,7 @@ services:
       WORDPRESS_TITLE: WordPress on Zerops
       WORDPRESS_URL: ${zeropsSubdomain}
 
-      WORDPRESS_ADMIN_EMAIL: your@email.com
+      WORDPRESS_ADMIN_EMAIL: michal.horejsi@gmail.com
       WORDPRESS_ADMIN_USER: admin
       WORDPRESS_ADMIN_PASSWORD: <@generateRandomString(<8>)>
 
@@ -191,9 +191,9 @@ services:
       WORDPRESS_TITLE: WordPress on Zerops
       WORDPRESS_URL: ${zeropsSubdomain}
 
-      WORDPRESS_ADMIN_EMAIL: your@email.com
+      WORDPRESS_ADMIN_EMAIL: michal.horejsi@gmail.com
       WORDPRESS_ADMIN_USER: admin
-      WORDPRESS_ADMIN_PASSWORD: <@generateRandomString(<8>)>
+      WORDPRESS_ADMIN_PASSWORD: 123admin
 
       WORDPRESS_DEBUG: "true"
       WORDPRESS_DEBUG_DISPLAY: "true"
