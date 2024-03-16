@@ -29,6 +29,8 @@ zerops:
 
           wp theme activate astra-child --allow-root
 
+          wp rewrite structure "/%postname%" --allow-root
+
       deploy:
         - ./
 
