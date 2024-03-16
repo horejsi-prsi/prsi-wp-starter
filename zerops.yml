@@ -81,8 +81,8 @@ zerops:
   - setup: autodilna
     extends: base
 
-  - setup: foobar1
+  - setup: foobar
     extends: base
 
-  - setup: foobar2
+  - setup: barfoo
     extends: base
