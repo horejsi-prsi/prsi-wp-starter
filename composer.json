@@ -1,5 +1,6 @@
 {
     "name": "zerops/wordpress",
+    "version": "1.0.0",
     "require": {
         "johnpbloch/wordpress": "^6.4",
         "composer/installers": "^2.2",
