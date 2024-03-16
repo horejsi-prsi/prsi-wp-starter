@@ -5,7 +5,7 @@
 services:
   - hostname: websitename
     type: php-nginx@8.1+1.22
-    buildFromGit: https://github.com/fxck/prsi-wordpress-starter
+    buildFromGit: https://github.com/horejsi-prsi/prsi-wp-starter
     enableSubdomainAccess: true
     envSecrets:
       WORDPRESS_TITLE: WordPress on Zerops
@@ -100,7 +100,7 @@ project:
 services:
   - hostname: websitename
     type: php-nginx@8.1+1.22
-    buildFromGit: https://github.com/fxck/prsi-wordpress-starter
+    buildFromGit: https://github.com/horejsi-prsi/prsi-wp-starter
     enableSubdomainAccess: true
     envSecrets:
       WORDPRESS_TITLE: WordPress on Zerops
@@ -185,7 +185,7 @@ services:
 
   - hostname: dev1
     type: php-nginx@8.1+1.22
-    buildFromGit: https://github.com/fxck/prsi-wordpress-starter
+    buildFromGit: https://github.com/horejsi-prsi/prsi-wp-starter
     enableSubdomainAccess: true
     envSecrets:
       WORDPRESS_TITLE: WordPress on Zerops
