@@ -1,7 +1,9 @@
 # Zerops Hello WordPress
 
 ## Import service
+
 ```yaml
+#yamlPreprocessor=on
 services:
   - hostname: websitename
     type: php-nginx@8.1+1.22
