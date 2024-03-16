@@ -1,12 +1,17 @@
 {
     "name": "zerops/wordpress",
     "require": {
-        "johnpbloch/wordpress": "6.4.3",
-        "composer/installers": "2.2.0",
-        "wpackagist-plugin/wp-redis-user-session-storage": "0.2",
+        "johnpbloch/wordpress": "^6.4",
+        "composer/installers": "^2.2",
+        "wpackagist-plugin/wp-redis-user-session-storage": "^0.2",
         "humanmade/s3-uploads": "3.0.7",
-        "keycdn/cache-enabler": "1.8.15",
-        "wpackagist-plugin/autoptimize": "3.1.10"
+        "keycdn/cache-enabler": "^1.8",
+        "wpackagist-plugin/autoptimize": "^3.1",
+        "wpackagist-plugin/elementor": "^3.15",
+        "wpackagist-theme/astra": "^4.1",
+        "wpackagist-plugin/contact-form-7": "^5.8",
+        "wpackagist-plugin/wp-mail-smtp": "^3.8",
+        "wpackagist-plugin/wordfence": "^7.10"
     },
     "extra": {
         "installer-paths": {

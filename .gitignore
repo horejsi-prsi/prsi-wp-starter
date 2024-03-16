@@ -14,4 +14,4 @@ wp-content/settings
 wp-content/uploads
 
 # Include manually managed plugins and themes
-!/wp-content/themes/twentytwentyfour/
+!/wp-content/themes/astra-child/

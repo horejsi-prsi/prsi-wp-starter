@@ -21,8 +21,8 @@ define( 'LOGGED_IN_SALT', getenv('WORDPRESS_LOGGED_IN_SALT') );
 define( 'NONCE_SALT', getenv('WORDPRESS_NONCE_SALT') );
 
 // settings
-define('WP_SITEURL', getenv('WORDPRESS_URL') . '/wp');
-define('WP_HOME', getenv('WORDPRESS_URL'));
+define( 'WP_SITEURL', getenv('WORDPRESS_URL') . '/wp' );
+define( 'WP_HOME', getenv('WORDPRESS_URL') );
 
 // core
 define( 'WP_DEBUG', getenv('WORDPRESS_DEBUG') );
@@ -32,14 +32,24 @@ define( 'WP_CONTENT_DIR', dirname(__FILE__) . '/wp-content');
 define( 'WP_CONTENT_URL', getenv('WORDPRESS_URL') . '/wp-content');
 
 // plugins
+// s3
 define( 'S3_UPLOADS_BUCKET', getenv('WORDPRESS_STORAGE_BUCKET') );
 define( 'S3_UPLOADS_REGION', 'us-east-1' );
 define( 'S3_UPLOADS_KEY', getenv('WORDPRESS_STORAGE_KEY_ID') );
 define( 'S3_UPLOADS_SECRET', getenv('WORDPRESS_STORAGE_ACCESS_KEY') );
 define( 'S3_UPLOADS_BUCKET_URL', rtrim(getenv('WORDPRESS_STORAGE_URL'), '/') . '/' . getenv('WORDPRESS_STORAGE_BUCKET') );
 define( 'S3_UPLOADS_URL', getenv('WORDPRESS_STORAGE_URL') );
+// cache
 define( 'WP_CACHE', true );
+// session
 define( 'WP_REDIS_USER_SESSION_HOST', getenv('WORDPRESS_REDIS_USER_SESSION_HOST') );
+// wordfence
+define( 'WFWAF_STORAGE_ENGINE', getenv('WFWAF_STORAGE_ENGINE') );
+define( 'WFWAF_DB_NAME', getenv('WORDPRESS_DB_NAME') );
+define( 'WFWAF_DB_USER', getenv('WORDPRESS_DB_USER') );
+define( 'WFWAF_DB_PASSWORD', getenv('WORDPRESS_DB_PASSWORD') );
+define( 'WFWAF_DB_HOST', getenv('WORDPRESS_DB_HOST') );
+define( 'WFWAF_TABLE_PREFIX', getenv('WORDPRESS_TABLE_PREFIX') );
 
 // misc
 define('FORCE_SSL_ADMIN', true);
