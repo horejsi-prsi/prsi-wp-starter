@@ -1,6 +1,6 @@
 # Zerops Hello WordPress
 
-## Import service
+## Add new website
 
 ```yaml
 #yamlPreprocessor=on
