@@ -77,7 +77,6 @@ zerops:
         - git config --global user.name "Michal"
         - git config --global user.email "michal.horejsi@gmail.com"
 
-
   - setup: autodilna
     extends: base
 
