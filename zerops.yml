@@ -32,6 +32,10 @@ zerops:
       deploy:
         - ./
 
+      cache:
+        - ./wp-content/vendor
+        - composer.lock
+
   - setup: autodilna
     extends: base
 
