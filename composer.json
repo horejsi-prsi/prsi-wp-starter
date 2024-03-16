@@ -1,0 +1,37 @@
+{
+    "name": "zerops/wordpress",
+    "require": {
+        "johnpbloch/wordpress": "6.4.3",
+        "composer/installers": "2.2.0",
+        "wpackagist-plugin/wp-redis-user-session-storage": "0.2",
+        "humanmade/s3-uploads": "3.0.7",
+        "keycdn/cache-enabler": "1.8.15",
+        "wpackagist-plugin/autoptimize": "3.1.10"
+    },
+    "extra": {
+        "installer-paths": {
+          "wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+          "wp-content/themes/{$name}/": ["type:wordpress-theme"],
+          "wp/": ["type:wordpress-core"]
+        },
+        "wordpress-install-dir": "wp"
+    },
+    "config": {
+        "vendor-dir": "wp-content/vendor",
+        "allow-plugins": {
+            "composer/installers": true,
+            "johnpbloch/wordpress-core-installer": true
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org",
+            "only": [
+                "wpackagist-plugin/*",
+                "wpackagist-theme/*"
+            ]
+        }
+    ]
+
+}
