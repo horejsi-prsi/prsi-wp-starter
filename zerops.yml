@@ -38,9 +38,6 @@ zerops:
         - ./wp-content/vendor
         - composer.lock
 
-  - setup: autodilna
-    extends: base
-
   - setup: dev1
     build:
       base: php@8.1
@@ -80,3 +77,12 @@ zerops:
         - git config --global user.name "Michal"
         - git config --global user.email "michal.horejsi@gmail.com"
 
+
+  - setup: autodilna
+    extends: base
+
+  - setup: foobar1
+    extends: base
+
+  - setup: foobar2
+    extends: base
