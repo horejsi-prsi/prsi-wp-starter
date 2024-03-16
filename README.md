@@ -13,7 +13,7 @@ services:
       WORDPRESS_TITLE: WordPress on Zerops
       WORDPRESS_URL: ${zeropsSubdomain}
 
-      WORDPRESS_ADMIN_EMAIL: michal.horejsi@gmail.com
+      WORDPRESS_ADMIN_EMAIL: "michal.horejsi@gmail.com"
       WORDPRESS_ADMIN_USER: admin
       WORDPRESS_ADMIN_PASSWORD: <@generateRandomString(<8>)>
 
