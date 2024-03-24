@@ -16,3 +16,5 @@ wp-content/uploads
 # Include manually managed plugins and themes
 !/wp-content/themes/astra-child/
 !/wp-content/plugins/astra-addon/
+!/wp-content/themes/index.php
+!/wp-content/plugins/index.php
