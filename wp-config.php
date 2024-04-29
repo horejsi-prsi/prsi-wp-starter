@@ -52,7 +52,8 @@ define( 'WFWAF_DB_HOST', getenv('WORDPRESS_DB_HOST') );
 define( 'WFWAF_TABLE_PREFIX', getenv('WORDPRESS_TABLE_PREFIX') );
 
 // misc
-define('FORCE_SSL_ADMIN', true);
+define( 'FORCE_SSL_ADMIN', true );
+define( 'FS_METHOD', 'direct' );
 
 if ($_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https') {
   $_SERVER['HTTPS']='on';
