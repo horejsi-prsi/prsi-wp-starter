@@ -34,7 +34,6 @@ zerops:
           wp language plugin update --all --allow-root
 
           wp language theme update --all --allow-root
-
       deploy:
         - ./
 
