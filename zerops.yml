@@ -55,7 +55,7 @@ zerops:
     run:
       base: php-nginx@8.1
       os: ubuntu
-      siteConfigPath: site.conf
+      siteConfigPath: site.conf.tmpl
 
   - setup: dev1
     build:
