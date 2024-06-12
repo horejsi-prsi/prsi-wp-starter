@@ -2,6 +2,7 @@ zerops:
   - setup: base
     build:
       base: php@8.1
+      os: ubuntu
       prepareCommands:
         - apt-get update && apt-get install -y mariadb-client
         - curl -sS https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar -o wp-cli.phar
@@ -38,6 +39,7 @@ zerops:
         - ./
     run:
       base: php-nginx@8.1
+      os: ubuntu
       siteConfigPath: site.conf
 
   - setup: dev1
