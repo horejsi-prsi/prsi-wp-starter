@@ -34,8 +34,11 @@ zerops:
           wp language plugin update --all --allow-root
 
           wp language theme update --all --allow-root
-      deploy:
+      deployFiles:
         - ./
+    run:
+      base: php-nginx@8.1
+      siteConfigPath: site.conf
 
   - setup: dev1
     build:
