@@ -4,9 +4,7 @@ server {
 
     server_name _;  # Consider specifying your actual domain here if possible
 
-    # Be sure that you set up a correct document root!
-    # Assuming WordPress is installed directly under /var/www/public
-    root /var/www;
+    root {{.DocumentRoot}};
 
     index index.php index.html index.htm;  # Ensure Nginx looks for index.php first
 

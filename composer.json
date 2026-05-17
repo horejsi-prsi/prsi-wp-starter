@@ -16,14 +16,14 @@
     },
     "extra": {
         "installer-paths": {
-          "wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
-          "wp-content/themes/{$name}/": ["type:wordpress-theme"],
-          "wp/": ["type:wordpress-core"]
+          "public/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+          "public/wp-content/themes/{$name}/": ["type:wordpress-theme"],
+          "public/wp/": ["type:wordpress-core"]
         },
-        "wordpress-install-dir": "wp"
+        "wordpress-install-dir": "public/wp"
     },
     "config": {
-        "vendor-dir": "wp-content/vendor",
+        "vendor-dir": "public/wp-content/vendor",
         "allow-plugins": {
             "composer/installers": true,
             "johnpbloch/wordpress-core-installer": true

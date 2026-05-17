@@ -55,4 +55,5 @@ zerops:
     run:
       base: php-nginx@8.1
       os: ubuntu
+      documentRoot: public
       siteConfigPath: site.conf.tmpl

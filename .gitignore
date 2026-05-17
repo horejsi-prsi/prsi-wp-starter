@@ -1,20 +1,20 @@
 # Composer dependencies
 /vendor/
-/wp/
-/wp-content/vendor
+/public/wp/
+/public/wp-content/vendor
 
 # WordPress core
-!wp-content/
-!wp-content/mu-plugins
-wp-content/plugins/*
-wp-content/themes/*
-wp-content/autoptimize_404_handler.php
-wp-content/cache
-wp-content/settings
-wp-content/uploads
+!public/wp-content/
+!public/wp-content/mu-plugins
+public/wp-content/plugins/*
+public/wp-content/themes/*
+public/wp-content/autoptimize_404_handler.php
+public/wp-content/cache
+public/wp-content/settings
+public/wp-content/uploads
 
 # Include manually managed plugins and themes
-!/wp-content/themes/astra-child/
-!/wp-content/plugins/astra-addon/
-!/wp-content/themes/index.php
-!/wp-content/plugins/index.php
+!/public/wp-content/themes/astra-child/
+!/public/wp-content/plugins/astra-addon/
+!/public/wp-content/themes/index.php
+!/public/wp-content/plugins/index.php

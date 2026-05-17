@@ -28,7 +28,7 @@ define( 'WP_HOME', getenv('WORDPRESS_URL') );
 define( 'WP_DEBUG', getenv('WORDPRESS_DEBUG') );
 define( 'WP_DEBUG_LOG', getenv('WORDPRESS_DEBUG_LOG') );
 define( 'WP_DEBUG_DISPLAY', getenv('WORDPRESS_DEBUG_DISPLAY') );
-define( 'WP_CONTENT_DIR', dirname(__FILE__) . '/wp-content');
+define( 'WP_CONTENT_DIR', dirname(__FILE__) . '/public/wp-content');
 define( 'WP_CONTENT_URL', getenv('WORDPRESS_URL') . '/wp-content');
 
 // plugins
@@ -60,9 +60,9 @@ if ($_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https') {
 }
 
 if ( ! defined( 'ABSPATH' ) ) {
-	define( 'ABSPATH', __DIR__ . '/wp/' );
+	define( 'ABSPATH', __DIR__ . '/public/wp/' );
 }
 
-require_once __DIR__ . '/wp-content/vendor/autoload.php';
+require_once __DIR__ . '/public/wp-content/vendor/autoload.php';
 
 require_once ABSPATH . '/wp-settings.php';
