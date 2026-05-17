@@ -8,8 +8,9 @@
         "humanmade/s3-uploads": "3.0.7",
         "keycdn/cache-enabler": "^1.8",
         "wpackagist-plugin/autoptimize": "^3.1",
-        "wpackagist-plugin/elementor": "^3.15",
-        "wpackagist-theme/astra": "^4.1",
+        "wpackagist-theme/hello-elementor":"^3.1.0",
+         "wpackagist-plugin/elementor": "^4",
+          "hipdevteam/elementor-pro": "^4",
         "wpackagist-plugin/contact-form-7": "^5.8",
         "wpackagist-plugin/wp-mail-smtp": "^4.0",
         "wpackagist-plugin/wordfence": "^7.10"
@@ -22,8 +23,11 @@
         },
         "wordpress-install-dir": "public/wp"
     },
-    "config": {
-        "vendor-dir": "public/wp-content/vendor",
+   "config": {
+        "vendor-dir": "wp-content/vendor",
+        "platform": {
+            "php": "8.1.32"
+        },
         "allow-plugins": {
             "composer/installers": true,
             "johnpbloch/wordpress-core-installer": true
